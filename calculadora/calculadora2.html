@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Calculadora</title>
+	<link rel="stylesheet" href="calcu2.css">
+</head>
+
+<body>
+	<table class="tabla">
+		<tr>
+			<td>
+				<input type="text" name="pantalla" id="pantalla">
+			</td>
+		</tr>
+		<tr id="fondo">
+			<td>
+					<input type="button" name="uno" value="1" onclick="document.getElementById('pantalla').value += '1'">
+					<input type="button" name="dos" value="2" onclick="document.getElementById('pantalla').value += '2'">
+					<input type="button" name="tres" value="3" onclick="document.getElementById('pantalla').value += '3'">
+					<input type="button" name="a" value="a" onclick="document.getElementById('pantalla').value += 'a'">
+				<br>
+					<input type="button" name="cuatro" value="4" onclick="document.getElementById('pantalla').value += '4'">
+					<input type="button" name="cinco" value="5" onclick="document.getElementById('pantalla').value += '5'">
+					<input type="button" name="seis" value="6" onclick="document.getElementById('pantalla').value += '6'">
+					<input type="button" name="b" value="b" onclick="document.getElementById('pantalla').value += 'b'">
+				<br>
+					<input type="button" name="siete" value="7" onclick="document.getElementById('pantalla').value += '7'">
+					<input type="button" name="ocho" value="8" onclick="document.getElementById('pantalla').value += '8'">
+					<input type="button" name="nueve" value="9" onclick="document.getElementById('pantalla').value += '9'">
+					<input type="button" name="c" value="c" onclick="document.getElementById('pantalla').value += 'c'">
+				<br>
+					<input type="button" name="cero" value="0" onclick="document.getElementById('pantalla').value += '0'">
+					<input type="button" name="f" value="f" onclick="document.getElementById('pantalla').value += 'f'">
+					<input type="button" name="e" value="e" onclick="document.getElementById('pantalla').value += 'e'">
+					<input type="button" name="d" value="d" onclick="document.getElementById('pantalla').value += 'd'">
+				<br>
+					<input type="button" id="hgt" name="hgt" value="#" onclick="document.getElementById('pantalla').value = '#'">
+					<input type="button" name="enter" value="=" onclick="document.getElementById('pantalla').value = eval(document.getElementById('pantalla').value)">
+					<input type="button" id="borrar" name="borrar" value="C" onclick="document.getElementById('pantalla').value = ''">
+				
+				
+
+			</td>
+		</tr>
+	</table>
+	
+	<script src="consola.js"></script>
+</body>
+</html>
